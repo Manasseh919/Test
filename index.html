@@ -3,61 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome Page</title>
+  <title>Dev Portal - Welcome</title>
   <style>
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f7fa;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       height: 100vh;
+      color: #fff;
     }
 
-    .card {
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-      padding: 40px;
+    .container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px 30px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
       text-align: center;
-      max-width: 400px;
+      max-width: 450px;
+      width: 90%;
     }
 
-    h1 {
-      margin-bottom: 20px;
-      color: #333;
+    .container h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
     }
 
-    p {
-      color: #666;
+    .container p {
       font-size: 16px;
+      line-height: 1.6;
+      color: #e0e0e0;
     }
 
     .btn {
       display: inline-block;
       margin-top: 25px;
-      padding: 10px 20px;
-      background-color: #4f46e5;
-      color: white;
+      padding: 12px 24px;
+      background-color: #ffffff;
+      color: #4f46e5;
+      font-weight: 600;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
+      font-size: 15px;
+      transition: all 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #3730a3;
+      background-color: #e0e0ff;
+      color: #3730a3;
+    }
+
+    .icon {
+      font-size: 48px;
+      margin-bottom: 15px;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Welcome to Jenkins Dev Portal</h1>
-    <p>This is a clean and simple HTML page for your development workspace.</p>
-    <a href="/jenkins" class="btn">Go to Jenkins</a>
+  <div class="container">
+    <div class="icon">🚀</div>
+    <h1>Welcome to Your Dev Portal</h1>
+    <p>All systems are ready. Jump into Jenkins and start building your next great thing!</p>
+    <a href="/jenkins" class="btn">Launch Jenkins</a>
   </div>
 </body>
 </html>
